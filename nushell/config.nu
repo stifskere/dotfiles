@@ -901,4 +901,4 @@ $env.config = {
 alias ssh = kitty +kitten ssh
 alias please = sudo
 
-source /home/memw/.config/nushell/prompt.nu
+source ~/.config/nushell/prompt.nu
