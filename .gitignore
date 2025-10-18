@@ -1,17 +1,17 @@
 *
 !.gitkeep
 
-!bspwm/
-!sxhkd/
-!polybar/
-!picom/
-!nvim/
-!kitty/
-!dunst/
-!flameshot/
-!nushell/
-!neofetch/
-!Thunar/
+!bspwm/**
+!sxhkd/**
+!polybar/**
+!picom/**
+!nvim/**
+!kitty/**
+!dunst/**
+!flameshot/**
+!nushell/**
+!neofetch/**
+!Thunar/**
 
 !*-LICENSE
 !README.md
