@@ -13,6 +13,9 @@
 !neofetch/
 !Thunar/
 
+!*-LICENSE
+!README.md
+
 **/cache/
 **/Cache/
 **/logs/
