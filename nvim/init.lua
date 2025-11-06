@@ -9,5 +9,9 @@ if not string.find(package.cpath, package_cpath_str, 1, true) then
 	package.cpath = package.cpath .. ";" .. package_cpath_str
 end
 
+vim.cmd [[
+	filetype plugin indent on
+]]
+
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")

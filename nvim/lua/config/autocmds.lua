@@ -6,3 +6,10 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		vim.cmd([[tnoremap <Esc> <C-\><C-n>]])
 	end,
 })
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, {
+	pattern = {"*.tf", "*.tfvars"},
+	callback = function()
+		vim.bo.filetype = "terraform"
+	end
+})
