@@ -1,3 +1,5 @@
+local Arrays = require("utils.arrays")
+
 local M = {}
 
 function M.deep_merge(target, source)
@@ -21,6 +23,12 @@ function M.merge_replace(target, source)
 
 	for key, value in pairs(source) do
 		target[key] = value
+	end
+end
+
+function M.merge_lists(target, source)
+	for _, element in ipairs(source) do
+		Arrays.insert(target, element)
 	end
 end
 

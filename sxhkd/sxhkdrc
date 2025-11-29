@@ -130,5 +130,5 @@ super + e
 super + ctrl + shift + t
 	kitty
 
-super + ctrl + shift + s
-	flameshot gui
+super + shift + s
+	FNAME="$(date +%s).png"; flameshot gui -r | mc pipe personal/cdn/$FNAME && echo -n "https://s3.memw.es/cdn/$FNAME" | xclip -selection clipboard
